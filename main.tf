@@ -1,5 +1,6 @@
 resource "aws_instance" "myInstance" {
   ami           = "ami-06ce3edf0cff21f07"
+  key_name      = "keypairname"
   instance_type = "t2.micro"
   user_data     = <<-EOF
                   #!/bin/bash
