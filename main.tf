@@ -12,6 +12,3 @@ resource "aws_instance" "myInstance" {
                   EOF
 }
 
-output "DNS" {
-  value = aws_instance.myInstance.public_dns
-}
